@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/gradient">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Zakat/زکوہ"
+            android:textSize="29sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2.6"
+        android:columnCount="3"
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:rowCount="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/corner"
+        android:layout_height="0dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="0dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        >
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+
+                android:layout_width="80dp"
+                android:id="@+id/calculater"
+                android:layout_height="80dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_calculater"
+                android:background="@drawable/round" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="calculate"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="0dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            >
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/nisab"
+                    android:src="@drawable/ic_nisab"
+                    android:background="@drawable/round1" />
+
+                <TextView
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Nisab"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="0dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            >
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/mustahiq"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_people"
+                    android:background="@drawable/round2" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Mustahiq"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+
+</LinearLayout>
